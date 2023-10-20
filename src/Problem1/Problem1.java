@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Problem1 {
 
-    ArrayList<Integer> insufficientGrades(int[] grades) {
+    static ArrayList<Integer> insufficientGrades(int[] grades) {
         ArrayList<Integer> insufficientGradesList = new ArrayList<>();
         for (int i = 0; i < grades.length - 1; i++) {
             if (grades[i] < 40)
@@ -14,7 +14,7 @@ public class Problem1 {
         return insufficientGradesList;
     }
 
-    int averageGrade(int[] grades) {
+    static int averageGrade(int[] grades) {
         int averageGrade = 0;
         for (int i = 0; i < grades.length - 1; i++) {
             averageGrade += grades[i];
@@ -23,7 +23,7 @@ public class Problem1 {
         return averageGrade / grades.length;
     }
 
-    ArrayList<Integer> roundedGrades(int[] grades) {
+    static ArrayList<Integer> roundedGrades(int[] grades) {
         int roundedGrade = 0;
         ArrayList<Integer> roundedGrades = new ArrayList<>();
         for (int i = 0; i < grades.length - 1; i++) {

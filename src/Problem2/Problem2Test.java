@@ -2,7 +2,7 @@ package Problem2;
 
 public class Problem2Test {
 
-    public void testFindMax() {
+    public static void findMaxTest() {
         int[] array = {1, 2, 3, 4};
         int n = array.length;
         int expectedResult = 4;
@@ -11,7 +11,7 @@ public class Problem2Test {
         assert Problem2.findMax(array, n) != incorrectExpectedResult;
     }
 
-    void findMinTest() {
+    public static void findMinTest() {
         int[] array = {3, 7, 1, 6, 4, 2};
         int n = array.length;
 
@@ -26,7 +26,7 @@ public class Problem2Test {
         assert incorrectResult != incorrectExpectedMin;
     }
 
-    void findMaxSumTest() {
+    public static void findMaxSumTest() {
         int[] array = {3, 7, 1, 6, 4, 2};
         int n = array.length;
 
@@ -41,7 +41,7 @@ public class Problem2Test {
         assert incorrectResult != incorrectExpectedMaxSum;
     }
 
-    void findMinSumTest() {
+    public static void findMinSumTest() {
         int[] array = {3, 7, 1, 6, 4, 2};
         int n = array.length;
 
@@ -55,6 +55,4 @@ public class Problem2Test {
         int incorrectResult = Problem2.findMinSum(array, n);
         assert incorrectResult != incorrectExpectedMinSum;
     }
-
-
 }

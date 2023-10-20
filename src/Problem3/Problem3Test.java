@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Problem3Test {
 
-    void sumTest() {
+    public static void sumTest() {
         int[] a = {1, 2, 3};
         int[] b = {1, 2, 3};
         int[] expectedResult = {2, 4, 6};
@@ -16,7 +16,7 @@ public class Problem3Test {
 
     }
 
-    void differenceTest() {
+    public static void differenceTest() {
         int[] a = {4, 6, 9, 5};
         int[] b = {1, 2, 3, 4};
         int[] expectedResult = {3, 4, 6, 1};
@@ -27,7 +27,7 @@ public class Problem3Test {
     }
 
 
-    void multiplyTest() {
+    public static void multiplyTest() {
         int[] a = {1, 2, 3};
         int b = 5;
         int[] expectedProduct = {0, 6, 1, 5};
@@ -38,7 +38,7 @@ public class Problem3Test {
     }
 
 
-    void divideTest() {
+    public static void divideTest() {
         int[] a = {4, 6, 9, 5};
         int b = 3;
         int[] expectedResult = {1, 5, 3, 1};
@@ -47,7 +47,4 @@ public class Problem3Test {
         assert Arrays.equals(expectedResult, Problem3.div(a, b));
         assert !Arrays.equals(unexpectedResult, Problem3.div(a, b));
     }
-
-
-
 }
