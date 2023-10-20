@@ -8,6 +8,7 @@ public class Main {
         Problem1Test.insufficientGradesTest();
         Problem1Test.averageGradeTest();
         Problem1Test.roundedGradesTest();
+        Problem1Test.maxRoundedGradesTest();
 
         Problem2Test.findMinTest();
         Problem2Test.findMaxTest();
@@ -23,7 +24,6 @@ public class Main {
         Problem4Test.findCheapestKeyboardTest();
         Problem4Test.findMostExpensiveDeviceTest();
         Problem4Test.findMostExpensiveSetInBudgetTest();
-
 
         System.out.println("Finished tests");
     }

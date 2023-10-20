@@ -43,5 +43,20 @@ public class Problem1Test {
         assert !incorrectResult.equals(unexpectedRoundedGrades);
     }
 
+    public static void maxRoundedGradesTest() {
+        int[] grades = {43, 57, 69, 77, 85};
+
+        int result = Problem1.maxRoundedGrades(grades);
+        int expectedResult = 85;
+        assert result == expectedResult;
+
+
+        int[] input = {38, 49, 61, 72, 84};
+        int unexpectedResult = 20;
+        int incorrectResult = Problem1.maxRoundedGrades(input);
+        assert unexpectedResult != incorrectResult;
+
+    }
+
 
 }
