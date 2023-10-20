@@ -1,3 +1,5 @@
+package Problem1;
+
 import java.util.ArrayList;
 
 public class Problem1 {
@@ -18,7 +20,7 @@ public class Problem1 {
             averageGrade += grades[i];
         }
 
-        return averageGrade;
+        return averageGrade / grades.length;
     }
 
     ArrayList<Integer> roundedGrades(int[] grades) {
@@ -35,7 +37,6 @@ public class Problem1 {
 
         return roundedGrades;
     }
-
 
 
 }

@@ -1,6 +1,8 @@
+package Problem2;
+
 public class Problem2 {
 
-    int findMax(int[] array, int n) {
+    public  static int findMax(int[] array, int n) {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {
             if (array[i] > max)
@@ -9,7 +11,7 @@ public class Problem2 {
         return max;
     }
 
-    int findMin(int[] array, int n) {
+    public static int findMin(int[] array, int n) {
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < n; i++) {
             if (array[i] < min)
@@ -18,7 +20,7 @@ public class Problem2 {
         return min;
     }
 
-    int findMaxSum(int[] array, int n) {
+    public static int findMaxSum(int[] array, int n) {
         int min = Integer.MAX_VALUE;
         int sum = 0;
 
@@ -32,7 +34,7 @@ public class Problem2 {
         return sum - min;
     }
 
-    int findMinSum(int[] array, int n) {
+    public static int findMinSum(int[] array, int n) {
         int max = Integer.MAX_VALUE;
         int sum = 0;
 

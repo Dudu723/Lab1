@@ -1,3 +1,5 @@
+package Problem4;
+
 public class Problem4 {
 
     int findCheapestKeyboard(int[] keyboards) {
